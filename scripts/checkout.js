@@ -100,8 +100,20 @@ document.querySelectorAll('.js-delete-link').forEach((link)=>{
        deleteProduct(productId);
        const container=document.querySelector(`.js-cart-item-container-${productId}`);
        container.remove();
+       updateCartQuantity();
     });
     
 
 });
+
+function updateCartQuantity(){
+    let cartQuantity=0;
+        cart.forEach((item)=>{
+            cartQuantity+=item.quantity;
+        });
+
+document.querySelector('.js-return-to-home-link').innerHTML=`${cartQuantity} items`;
+};
+updateCartQuantity();
+
 
