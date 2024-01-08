@@ -11,7 +11,7 @@ cart.forEach((item)=>{
         if (product.id===productId){
             matchingProduct=product;
         }
-    })
+    });
     
 
 
