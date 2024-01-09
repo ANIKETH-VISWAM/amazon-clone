@@ -15,3 +15,12 @@ export const deliveryOptions=[
         priceCents:999
     }
 ];
+export function getdeliveryOption(deliveryOptionId){
+    let delivaryOption;
+    deliveryOptions.forEach((option)=>{
+        if(option.id===deliveryOptionId){
+            delivaryOption=option;
+        }
+    });
+    return delivaryOption;
+}
