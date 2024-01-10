@@ -24,7 +24,7 @@ export const products = [
     },
     priceCents: 1090,
     keywords: [
-      "socks",
+      "socks ",
       "sports",
       "apparel"
     ]
